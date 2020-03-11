@@ -178,7 +178,7 @@ const StorageCtrl = (function(){
           html += `<li class="collection-item" id="item-${item.id}">
           <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
           <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil"></i>
+            <i class="edit-item fas fa-pen"></i>
           </a>
         </li>`;
         });
@@ -203,7 +203,7 @@ const StorageCtrl = (function(){
         // Add HTML
         li.innerHTML = `<strong>${item.name}: </strong> <em>${item.calories} Calories</em>
         <a href="#" class="secondary-content">
-          <i class="edit-item fa fa-pencil"></i>
+          <i class="edit-item fas fa-pen"></i>
         </a>`;
         // Insert item
         document.querySelector(UISelectors.itemList).insertAdjacentElement('beforeend', li)
@@ -217,7 +217,7 @@ const StorageCtrl = (function(){
           if(itemID === `item-${item.id}`){
             document.querySelector(`#${itemID}`).innerHTML = `<strong>${item.name}: </strong> <em>${item.calories} Calories</em>
             <a href="#" class="secondary-content">
-              <i class="edit-item fa fa-pencil"></i>
+              <i class="edit-item fas fa-pen"></i>
             </a>`;
           }
         });
