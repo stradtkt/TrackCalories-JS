@@ -181,12 +181,12 @@ const ItemCtrl = (function(){
       const UISelectors = UICtrl.getSelectors();
   
       // Add item event
-      document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
+      document.querySelector(UISelectors.addBtn).addEventListener('click', itemEditClick);
       document.querySelector(UISelectors.itemList).addEventListener('click', itemUpdateSubmit);
     }
   
     // Add item submit
-    const itemAddSubmit = function(e){
+    const itemEditClick = function(e){
       // Get form input from UI Controller
       const input = UICtrl.getItemInput();
   
